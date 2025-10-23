@@ -83,7 +83,8 @@ int main()
     char city[NUMBER_OF_CITIES]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','d','e'};
     cityManagement(city);
 
-
+     printf("2.Distance Management\n\n");
+     distanceManagement(city,distance);
 
 
 
