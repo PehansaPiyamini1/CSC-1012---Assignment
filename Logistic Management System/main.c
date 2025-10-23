@@ -8,9 +8,6 @@ char city [NUMBER_OF_CITIES];
 void vehicleManagement(int vehicle[][5]);
 
 
-void cityManagement(char city [NUMBER_OF_CITIES]);
-
-
 void cityManagement(char city [NUMBER_OF_CITIES]){
 
     for(a=0;a<NUMBER_OF_CITIES;a++){
