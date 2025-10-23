@@ -3,8 +3,9 @@
 #define NUMBER_OF_CITIES 30
 
 
-int a;
+int a,b,c,distance[NUMBER_OF_CITIES][NUMBER_OF_CITIES];;
 char city [NUMBER_OF_CITIES];
+void vehicleManagement(int vehicle[][5]);
 
 
 void cityManagement(char city [NUMBER_OF_CITIES]);
@@ -17,6 +18,32 @@ void cityManagement(char city [NUMBER_OF_CITIES]){
     }
     printf("\n\n");
 
+
+}
+
+void distanceManagement(char city[NUMBER_OF_CITIES],int distance[NUMBER_OF_CITIES][NUMBER_OF_CITIES]){
+    printf("Put correct distance between following two cities...\n");
+    printf("\(Distance from city to itself ---> 0 km\) \n\n");
+
+
+    for(b=0;b<NUMBER_OF_CITIES;b++){
+            for( c=0;c<NUMBER_OF_CITIES;c++){
+
+                printf(" %c to %c : ",city[b],city[c]);
+                scanf("%d",&distance[b][c]);
+            }
+        }
+                printf("\n\n");
+
+            for(b=0;b<NUMBER_OF_CITIES;b++){
+                for(c=0;c<NUMBER_OF_CITIES;c++){
+
+                    printf(" %09d ",distance[b][c]);
+                }
+                printf("\n\n");
+            }
+
+        printf("\n\n");
 
 }
 
@@ -54,8 +81,11 @@ int main()
 
 
     char city[NUMBER_OF_CITIES]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','d','e'};
-
     cityManagement(city);
+
+
+
+
 
 
 
